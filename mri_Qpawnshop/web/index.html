@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computador Corporativo - Loja de Penhores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="desktop-root" class="os-classic" style="display: none;">
+        <!-- Ícones da Área de Trabalho -->
+        <div class="desktop-icons" id="desktop-icons"></div>
+
+        <!-- Janela Ativa do Aplicativo -->
+        <div class="os-window" id="os-window">
+            <div class="window-titlebar">
+                <div class="window-title-left">
+                    <div class="mac-dots">
+                        <span class="dot red" id="btn-close-dot" title="Fechar"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <i id="win-icon" class="fa-solid fa-store"></i>
+                    <span id="win-title">Gestão da Loja</span>
+                </div>
+                <div class="window-controls">
+                    <button type="button" class="win-close-btn" id="btn-close-win" title="Fechar (ESC)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="window-content" id="win-body"></div>
+        </div>
+
+        <!-- Dock Inferior -->
+        <div class="ifruit-dock-wrapper">
+            <div class="ifruit-dock" id="ifruit-dock"></div>
+            <div class="ifruit-brand">
+                <i class="fa-solid fa-apple-whole"></i>
+                <span id="os-version-label">Sistema Clássico</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
